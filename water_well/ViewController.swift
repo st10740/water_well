@@ -18,8 +18,8 @@ class ViewController: UIViewController {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
         gradientLayer.colors = [UIColor.init(displayP3Red: 21/255, green: 59/255, blue: 217/255, alpha: 1).cgColor, UIColor.init(displayP3Red: 60/255, green: 111/255, blue: 255/255, alpha: 1).cgColor]
-        gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
-        gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
+        gradientLayer.startPoint = CGPoint(x: 0, y: 1)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 0)
         //gradientLayer.locations = [0, 0.3]
         view.layer.insertSublayer(gradientLayer, at: 0)
         
