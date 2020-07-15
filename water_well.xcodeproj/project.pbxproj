@@ -16,6 +16,7 @@
 		1E39FAC224BC08DB005B95EC /* water_wellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E39FAC124BC08DB005B95EC /* water_wellTests.swift */; };
 		1E39FACD24BC08DB005B95EC /* water_wellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E39FACC24BC08DB005B95EC /* water_wellUITests.swift */; };
 		1E4C9DEB24BD403F00C73AB9 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C9DEA24BD403F00C73AB9 /* Page2ViewController.swift */; };
+		1E789E4624BD812000E081AE /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E789E4524BD812000E081AE /* Page3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		1E39FACC24BC08DB005B95EC /* water_wellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = water_wellUITests.swift; sourceTree = "<group>"; };
 		1E39FACE24BC08DB005B95EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E4C9DEA24BD403F00C73AB9 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
+		1E789E4524BD812000E081AE /* Page3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				1E39FAB524BC08DB005B95EC /* LaunchScreen.storyboard */,
 				1E39FAB824BC08DB005B95EC /* Info.plist */,
 				1E4C9DEA24BD403F00C73AB9 /* Page2ViewController.swift */,
+				1E789E4524BD812000E081AE /* Page3ViewController.swift */,
 			);
 			path = water_well;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				1E39FAAF24BC08DB005B95EC /* ViewController.swift in Sources */,
 				1E39FAAB24BC08DB005B95EC /* AppDelegate.swift in Sources */,
 				1E4C9DEB24BD403F00C73AB9 /* Page2ViewController.swift in Sources */,
+				1E789E4624BD812000E081AE /* Page3ViewController.swift in Sources */,
 				1E39FAAD24BC08DB005B95EC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

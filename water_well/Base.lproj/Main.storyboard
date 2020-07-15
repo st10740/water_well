@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KNM-z0-Upk">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,111 +17,173 @@
             <objects>
                 <viewController id="qe4-DH-4Wk" customClass="ViewController" customModule="water_well" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2hH-Ae-IiI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="water_resource" translatesAutoresizingMaskIntoConstraints="NO" id="w44-yE-sGf">
-                                <rect key="frame" x="107" y="278.66666666666669" width="170" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="01W-gA-fUg"/>
-                                    <constraint firstAttribute="width" constant="170" id="oaP-9F-cxg"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqy-Kw-lx0">
-                                <rect key="frame" x="185.33333333333334" y="427.66666666666669" width="43.666666666666657" height="18"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="ocv-wQ-wZw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="NHE-eW-kQg">
-                                <rect key="frame" x="0.0" y="651" width="414" height="91"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="X1h-Y0-qFm"/>
-                                    <constraint firstAttribute="height" constant="91" id="nre-Vb-8tB"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="group_28" translatesAutoresizingMaskIntoConstraints="NO" id="dQY-XP-s24">
-                                <rect key="frame" x="107" y="326.66666666666669" width="200" height="83"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="8xG-os-lx2"/>
-                                    <constraint firstAttribute="height" constant="83" id="HTu-Eo-OIB"/>
-                                </constraints>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ODm-lx-P3k" userLabel="waveStack">
+                                <rect key="frame" x="0.0" y="589" width="375" height="78"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="FIM-PZ-UxK">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="7tE-nB-vnQ" userLabel="three_title">
+                                <rect key="frame" x="91" y="262" width="193" height="143.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="water_resource" translatesAutoresizingMaskIntoConstraints="NO" id="cRQ-Vm-k62">
+                                        <rect key="frame" x="13" y="0.0" width="167" height="37"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="6A7-2t-T3x" userLabel="two_title">
+                                        <rect key="frame" x="0.0" y="38" width="193" height="105.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="group_28" translatesAutoresizingMaskIntoConstraints="NO" id="VSI-dx-T7l">
+                                                <rect key="frame" x="0.0" y="0.0" width="193" height="82"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adj-hG-fT1">
+                                                <rect key="frame" x="78" y="91" width="37.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dQY-XP-s24" firstAttribute="centerY" secondItem="2hH-Ae-IiI" secondAttribute="centerY" id="2bl-Mq-mdU"/>
-                            <constraint firstItem="NHE-eW-kQg" firstAttribute="leading" secondItem="LdB-Hq-3Qh" secondAttribute="leading" id="AiA-A6-dvW"/>
-                            <constraint firstItem="w44-yE-sGf" firstAttribute="leading" secondItem="dQY-XP-s24" secondAttribute="leading" id="OuI-hA-FBz"/>
-                            <constraint firstItem="oqy-Kw-lx0" firstAttribute="centerX" secondItem="LdB-Hq-3Qh" secondAttribute="centerX" id="YFC-3x-sea"/>
-                            <constraint firstItem="oqy-Kw-lx0" firstAttribute="top" secondItem="dQY-XP-s24" secondAttribute="bottom" constant="18" id="kPW-g7-9z6"/>
-                            <constraint firstItem="LdB-Hq-3Qh" firstAttribute="trailing" secondItem="NHE-eW-kQg" secondAttribute="trailing" id="maK-ub-5Ck"/>
-                            <constraint firstItem="dQY-XP-s24" firstAttribute="top" secondItem="w44-yE-sGf" secondAttribute="bottom" id="rA5-rE-p2R"/>
-                            <constraint firstAttribute="bottom" secondItem="NHE-eW-kQg" secondAttribute="bottom" constant="-6" id="yi3-TW-m3n"/>
-                            <constraint firstItem="dQY-XP-s24" firstAttribute="centerX" secondItem="LdB-Hq-3Qh" secondAttribute="centerX" id="yq4-wJ-lLe"/>
+                            <constraint firstAttribute="bottom" secondItem="ODm-lx-P3k" secondAttribute="bottom" id="Fhb-tp-LUt"/>
+                            <constraint firstItem="ODm-lx-P3k" firstAttribute="leading" secondItem="3oC-az-yG0" secondAttribute="leading" id="IRb-CC-Uv2"/>
+                            <constraint firstItem="3oC-az-yG0" firstAttribute="trailing" secondItem="ODm-lx-P3k" secondAttribute="trailing" id="Ifg-gW-SJ6"/>
+                            <constraint firstItem="7tE-nB-vnQ" firstAttribute="centerY" secondItem="2hH-Ae-IiI" secondAttribute="centerY" id="Zax-57-xIf"/>
+                            <constraint firstItem="7tE-nB-vnQ" firstAttribute="centerX" secondItem="2hH-Ae-IiI" secondAttribute="centerX" id="kka-xD-Bwz"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="LdB-Hq-3Qh"/>
+                        <viewLayoutGuide key="safeArea" id="3oC-az-yG0"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4m8-6N-7pS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="138.58695652173915"/>
+            <point key="canvasLocation" x="130.40000000000001" y="138.0809595202399"/>
+        </scene>
+        <!--Page3 View Controller-->
+        <scene sceneID="VLD-AJ-Zbl">
+            <objects>
+                <viewController id="404-vc-C1T" customClass="Page3ViewController" customModule="water_well" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9j0-sZ-Wpv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-180" translatesAutoresizingMaskIntoConstraints="NO" id="bCV-rD-Pnk" userLabel="topPlace">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="group-1" translatesAutoresizingMaskIntoConstraints="NO" id="dYz-rD-qmT">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Lq-Mp-hYc" userLabel="titleStack">
+                                        <rect key="frame" x="0.0" y="45" width="375" height="120"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="water_resource" translatesAutoresizingMaskIntoConstraints="NO" id="Sh1-Ko-OBo">
+                                                <rect key="frame" x="104" y="0.0" width="167" height="37"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="group_28" translatesAutoresizingMaskIntoConstraints="NO" id="Smq-gg-g8I">
+                                                <rect key="frame" x="91" y="38" width="193" height="82"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QtB-u3-1Tl" userLabel="bottomPlace">
+                                <rect key="frame" x="0.0" y="589" width="375" height="78"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="tUR-hE-Sgk">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WvZ-Q5-dds">
+                                <rect key="frame" x="124" y="296" width="190" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oqD-dn-Jsb">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="190" id="bFi-ht-zP9"/>
+                                            <constraint firstAttribute="height" constant="30" id="cLo-NX-VbH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wDy-US-dEd" firstAttribute="trailing" secondItem="QtB-u3-1Tl" secondAttribute="trailing" id="1ZR-50-hEX"/>
+                            <constraint firstItem="QtB-u3-1Tl" firstAttribute="leading" secondItem="wDy-US-dEd" secondAttribute="leading" id="ZeJ-Lz-Nb2"/>
+                            <constraint firstItem="wDy-US-dEd" firstAttribute="trailing" secondItem="bCV-rD-Pnk" secondAttribute="trailing" id="ZvL-Fa-3pq"/>
+                            <constraint firstItem="bCV-rD-Pnk" firstAttribute="top" secondItem="wDy-US-dEd" secondAttribute="top" id="dN0-YP-lEJ"/>
+                            <constraint firstItem="QtB-u3-1Tl" firstAttribute="bottom" secondItem="wDy-US-dEd" secondAttribute="bottom" id="lml-Al-oZ9"/>
+                            <constraint firstItem="bCV-rD-Pnk" firstAttribute="leading" secondItem="9j0-sZ-Wpv" secondAttribute="leading" id="mwg-xD-1KH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wDy-US-dEd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mqJ-h5-Kno" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="839.73013493253382"/>
         </scene>
         <!--Page2 View Controller-->
         <scene sceneID="oAs-D4-UXz">
             <objects>
                 <viewController id="KNM-z0-Upk" customClass="Page2ViewController" customModule="water_well" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K6s-56-1iC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="water_resource" translatesAutoresizingMaskIntoConstraints="NO" id="23j-Nm-Xjh">
-                                <rect key="frame" x="107" y="278.66666666666669" width="170" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="1Ec-4z-387"/>
-                                    <constraint firstAttribute="height" constant="48" id="sMK-2I-L8Z"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="group_28" translatesAutoresizingMaskIntoConstraints="NO" id="aLX-Cz-TYk">
-                                <rect key="frame" x="107" y="326.66666666666669" width="200" height="83"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="83" id="0By-dQ-ikq"/>
-                                    <constraint firstAttribute="width" constant="200" id="iDT-eI-Z9m"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="tav-ZF-p6m">
-                                <rect key="frame" x="0.0" y="651" width="414" height="91"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="POk-ab-U6m"/>
-                                    <constraint firstAttribute="height" constant="91" id="dZi-ua-atP"/>
-                                </constraints>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZhR-s6-W3v" userLabel="waveStack">
+                                <rect key="frame" x="0.0" y="589" width="375" height="78"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="vQT-ho-JQt">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ohi-d0-BDf" userLabel="titleStack">
+                                <rect key="frame" x="91" y="248" width="193" height="171"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="water_resource" translatesAutoresizingMaskIntoConstraints="NO" id="TSd-ZO-qAJ">
+                                        <rect key="frame" x="13" y="0.0" width="167" height="37"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="group_28" translatesAutoresizingMaskIntoConstraints="NO" id="Tuj-UV-8PU">
+                                        <rect key="frame" x="0.0" y="38" width="193" height="82"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="S1x-hi-Xrf" userLabel="progressStack">
+                                        <rect key="frame" x="0.0" y="121" width="193" height="50"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aLX-Cz-TYk" firstAttribute="centerX" secondItem="tQh-Wp-2nD" secondAttribute="centerX" id="7jv-RQ-j2J"/>
-                            <constraint firstItem="tav-ZF-p6m" firstAttribute="leading" secondItem="tQh-Wp-2nD" secondAttribute="leading" id="E9n-2h-41b"/>
-                            <constraint firstItem="aLX-Cz-TYk" firstAttribute="centerY" secondItem="K6s-56-1iC" secondAttribute="centerY" id="IbD-fI-wXc"/>
-                            <constraint firstItem="tav-ZF-p6m" firstAttribute="trailing" secondItem="tQh-Wp-2nD" secondAttribute="trailing" id="LwN-rw-fWA"/>
-                            <constraint firstItem="aLX-Cz-TYk" firstAttribute="top" secondItem="23j-Nm-Xjh" secondAttribute="bottom" id="kzu-Fu-cnS"/>
-                            <constraint firstAttribute="bottom" secondItem="tav-ZF-p6m" secondAttribute="bottom" constant="-6" id="mca-uq-2NS"/>
-                            <constraint firstItem="23j-Nm-Xjh" firstAttribute="leading" secondItem="aLX-Cz-TYk" secondAttribute="leading" id="uah-O5-zE3"/>
+                            <constraint firstItem="ZhR-s6-W3v" firstAttribute="leading" secondItem="jds-3K-DMI" secondAttribute="leading" id="0K7-VH-gqB"/>
+                            <constraint firstItem="jds-3K-DMI" firstAttribute="trailing" secondItem="ZhR-s6-W3v" secondAttribute="trailing" id="BjL-ku-Hqf"/>
+                            <constraint firstItem="Ohi-d0-BDf" firstAttribute="centerX" secondItem="K6s-56-1iC" secondAttribute="centerX" id="M98-aB-RDF"/>
+                            <constraint firstItem="ZhR-s6-W3v" firstAttribute="bottom" secondItem="jds-3K-DMI" secondAttribute="bottom" id="o8R-Qr-Ito"/>
+                            <constraint firstItem="Ohi-d0-BDf" firstAttribute="centerY" secondItem="K6s-56-1iC" secondAttribute="centerY" id="uiL-wm-5oC"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="tQh-Wp-2nD"/>
+                        <viewLayoutGuide key="safeArea" id="jds-3K-DMI"/>
                     </view>
                     <navigationItem key="navigationItem" id="X9i-Od-agD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xod-yx-nLo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956.52173913043487" y="138.58695652173915"/>
+            <point key="canvasLocation" x="956" y="138.0809595202399"/>
         </scene>
     </scenes>
     <resources>
-        <image name="group" width="1080" height="234"/>
-        <image name="group_28" width="579" height="246"/>
-        <image name="water_resource" width="501" height="111"/>
+        <image name="group" width="360" height="78"/>
+        <image name="group-1" width="360" height="225"/>
+        <image name="group_28" width="193" height="82"/>
+        <image name="water_resource" width="167" height="37"/>
     </resources>
 </document>
