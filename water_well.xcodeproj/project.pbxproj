@@ -52,6 +52,7 @@
 		1E39FAC824BC08DB005B95EC /* water_wellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = water_wellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E39FACC24BC08DB005B95EC /* water_wellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = water_wellUITests.swift; sourceTree = "<group>"; };
 		1E39FACE24BC08DB005B95EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E499CB524BFEC920046BF75 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../../Downloads/Roboto-2/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		1E4C9DEA24BD403F00C73AB9 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		1E789E4524BD812000E081AE /* Page3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				1E2276A824BC4D5A00B05EAA /* Roboto-Regular.ttf */,
+				1E499CB524BFEC920046BF75 /* Roboto-Bold.ttf */,
 				1E39FAAA24BC08DB005B95EC /* AppDelegate.swift */,
 				1E39FAAC24BC08DB005B95EC /* SceneDelegate.swift */,
 				1E39FAAE24BC08DB005B95EC /* ViewController.swift */,

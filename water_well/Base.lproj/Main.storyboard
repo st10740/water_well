@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="404-vc-C1T">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
         <array key="Roboto-Regular.ttf">
             <string>Roboto-Regular</string>
         </array>
@@ -17,19 +20,19 @@
             <objects>
                 <viewController id="qe4-DH-4Wk" customClass="ViewController" customModule="water_well" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2hH-Ae-IiI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ODm-lx-P3k" userLabel="waveStack">
-                                <rect key="frame" x="0.0" y="589" width="375" height="78"/>
+                                <rect key="frame" x="0.0" y="490" width="320" height="78"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="FIM-PZ-UxK">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="7tE-nB-vnQ" userLabel="three_title">
-                                <rect key="frame" x="91" y="262" width="193" height="143.5"/>
+                                <rect key="frame" x="63.5" y="212.5" width="193" height="143.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="water_resource" translatesAutoresizingMaskIntoConstraints="NO" id="cRQ-Vm-k62">
                                         <rect key="frame" x="13" y="0.0" width="167" height="37"/>
@@ -71,105 +74,251 @@
             <objects>
                 <viewController id="404-vc-C1T" customClass="Page3ViewController" customModule="water_well" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9j0-sZ-Wpv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-180" translatesAutoresizingMaskIntoConstraints="NO" id="bCV-rD-Pnk" userLabel="topPlace">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="zz9-s0-RXH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="group-1" translatesAutoresizingMaskIntoConstraints="NO" id="dYz-rD-qmT">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Lq-Mp-hYc" userLabel="titleStack">
-                                        <rect key="frame" x="0.0" y="45" width="375" height="120"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-180" translatesAutoresizingMaskIntoConstraints="NO" id="bCV-rD-Pnk" userLabel="topPlace">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="185"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="water_resource" translatesAutoresizingMaskIntoConstraints="NO" id="Sh1-Ko-OBo">
-                                                <rect key="frame" x="104" y="0.0" width="167" height="37"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="group-1" translatesAutoresizingMaskIntoConstraints="NO" id="dYz-rD-qmT">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="185"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="group_28" translatesAutoresizingMaskIntoConstraints="NO" id="Smq-gg-g8I">
-                                                <rect key="frame" x="91" y="38" width="193" height="82"/>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="LEf-jS-qXd" userLabel="centerStack">
+                                        <rect key="frame" x="0.0" y="233" width="320" height="184"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Hfh-Hz-0vc" userLabel="PhoneStack">
+                                                <rect key="frame" x="27" y="0.0" width="266" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手機" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="5J0-2W-qSt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="20"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WiH-f4-J66" userLabel="PhoneTFStack">
+                                                        <rect key="frame" x="52" y="0.0" width="214" height="40"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CEL-Lp-zOg">
+                                                                <rect key="frame" x="12" y="8" width="188" height="24"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="24" id="8Bk-wk-aYN"/>
+                                                                    <constraint firstAttribute="width" constant="188" id="Yma-Q9-g8L"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="214" id="OG2-gr-P7D"/>
+                                                            <constraint firstAttribute="height" constant="40" id="iLL-aC-7Y4"/>
+                                                        </constraints>
+                                                        <edgeInsets key="layoutMargins" top="8" left="12" bottom="8" right="14"/>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="buk-pj-HAv" userLabel="PasswordStack">
+                                                <rect key="frame" x="27" y="61" width="266" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密碼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="17l-LI-mGC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="20"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5vs-6z-cKE">
+                                                        <rect key="frame" x="52" y="0.0" width="214" height="40"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C1q-EB-D8O">
+                                                                <rect key="frame" x="12" y="8" width="188" height="24"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="188" id="OD3-7F-wfV"/>
+                                                                    <constraint firstAttribute="height" constant="24" id="xWP-YE-NpK"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="214" id="0Kc-FQ-HSs"/>
+                                                            <constraint firstAttribute="height" constant="40" id="A02-QG-bgp"/>
+                                                        </constraints>
+                                                        <edgeInsets key="layoutMargins" top="8" left="12" bottom="8" right="14"/>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jBG-U4-4HI">
+                                                <rect key="frame" x="26" y="122" width="268" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaC-tC-GeM">
+                                                        <rect key="frame" x="24" y="8" width="220" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="220" id="YYT-fe-bMr"/>
+                                                            <constraint firstAttribute="height" constant="24" id="ueT-jK-xRB"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                                        <state key="normal" title="登入">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="G3v-3S-V6s"/>
+                                                    <constraint firstAttribute="width" constant="268" id="b3o-0I-eYF"/>
+                                                </constraints>
+                                                <edgeInsets key="layoutMargins" top="8" left="24" bottom="8" right="24"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="K7P-DN-tCL" userLabel="buttonStack">
+                                                <rect key="frame" x="46" y="183" width="228" height="1"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hd2-Zb-3Fc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="1"/>
+                                                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="20"/>
+                                                        <state key="normal" title=" 註冊帳號"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uQ-C4-1eX">
+                                                        <rect key="frame" x="148" y="0.0" width="80" height="1"/>
+                                                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="20"/>
+                                                        <state key="normal" title="忘記密碼"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="4b7-m0-DWB" userLabel="imageStack">
+                                        <rect key="frame" x="0.0" y="465" width="320" height="16.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="dTA-oR-VCl">
+                                                <rect key="frame" x="0.0" y="0.0" width="159.5" height="16.5"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="bitmap-1" translatesAutoresizingMaskIntoConstraints="NO" id="jVl-G6-s1j">
+                                                <rect key="frame" x="160.5" y="0.0" width="159.5" height="16.5"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QtB-u3-1Tl" userLabel="bottomPlace">
+                                        <rect key="frame" x="0.0" y="529.5" width="320" height="38.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="tUR-hE-Sgk">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="38.5"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QtB-u3-1Tl" userLabel="bottomPlace">
-                                <rect key="frame" x="0.0" y="589" width="375" height="78"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Lq-Mp-hYc" userLabel="titleStack">
+                                <rect key="frame" x="63.5" y="42" width="193" height="120"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="tUR-hE-Sgk">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="water_resource" translatesAutoresizingMaskIntoConstraints="NO" id="Sh1-Ko-OBo">
+                                        <rect key="frame" x="13" y="0.0" width="167" height="37"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="group_28" translatesAutoresizingMaskIntoConstraints="NO" id="Smq-gg-g8I">
+                                        <rect key="frame" x="0.0" y="38" width="193" height="82"/>
                                     </imageView>
                                 </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WiH-f4-J66">
-                                <rect key="frame" x="113" y="276" width="214" height="40"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CEL-Lp-zOg">
-                                        <rect key="frame" x="12" y="8" width="188" height="24"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="8Bk-wk-aYN"/>
-                                            <constraint firstAttribute="width" constant="188" id="Yma-Q9-g8L"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="214" id="OG2-gr-P7D"/>
-                                    <constraint firstAttribute="height" constant="40" id="iLL-aC-7Y4"/>
+                                    <constraint firstAttribute="width" secondItem="7Lq-Mp-hYc" secondAttribute="height" multiplier="193:120" id="igt-Zh-Lsx"/>
                                 </constraints>
-                                <edgeInsets key="layoutMargins" top="8" left="12" bottom="8" right="14"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="wDy-US-dEd" firstAttribute="trailing" secondItem="QtB-u3-1Tl" secondAttribute="trailing" id="1ZR-50-hEX"/>
-                            <constraint firstItem="WiH-f4-J66" firstAttribute="top" secondItem="bCV-rD-Pnk" secondAttribute="bottom" constant="111" id="Ueh-fy-Ec5"/>
-                            <constraint firstItem="QtB-u3-1Tl" firstAttribute="leading" secondItem="wDy-US-dEd" secondAttribute="leading" id="ZeJ-Lz-Nb2"/>
-                            <constraint firstItem="wDy-US-dEd" firstAttribute="trailing" secondItem="bCV-rD-Pnk" secondAttribute="trailing" id="ZvL-Fa-3pq"/>
-                            <constraint firstItem="bCV-rD-Pnk" firstAttribute="top" secondItem="wDy-US-dEd" secondAttribute="top" id="dN0-YP-lEJ"/>
-                            <constraint firstItem="QtB-u3-1Tl" firstAttribute="bottom" secondItem="wDy-US-dEd" secondAttribute="bottom" id="lml-Al-oZ9"/>
-                            <constraint firstItem="WiH-f4-J66" firstAttribute="leading" secondItem="wDy-US-dEd" secondAttribute="leading" constant="113" id="lsE-yh-QIn"/>
-                            <constraint firstItem="bCV-rD-Pnk" firstAttribute="leading" secondItem="9j0-sZ-Wpv" secondAttribute="leading" id="mwg-xD-1KH"/>
+                            <constraint firstItem="wDy-US-dEd" firstAttribute="trailing" secondItem="zz9-s0-RXH" secondAttribute="trailing" id="0YF-PH-XLI"/>
+                            <constraint firstItem="zz9-s0-RXH" firstAttribute="top" secondItem="wDy-US-dEd" secondAttribute="top" id="2yR-Ng-9dS"/>
+                            <constraint firstItem="7Lq-Mp-hYc" firstAttribute="centerX" secondItem="9j0-sZ-Wpv" secondAttribute="centerX" id="Nui-Gr-BE7"/>
+                            <constraint firstItem="zz9-s0-RXH" firstAttribute="leading" secondItem="wDy-US-dEd" secondAttribute="leading" id="P9o-4j-xkJ"/>
+                            <constraint firstItem="zz9-s0-RXH" firstAttribute="bottom" secondItem="wDy-US-dEd" secondAttribute="bottom" id="dMp-kb-bql"/>
+                            <constraint firstItem="7Lq-Mp-hYc" firstAttribute="top" secondItem="wDy-US-dEd" secondAttribute="top" constant="42" id="eNF-Im-Thb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wDy-US-dEd"/>
                     </view>
                     <connections>
+                        <outlet property="LoginButton" destination="MaC-tC-GeM" id="pXs-83-nct"/>
+                        <outlet property="LoginStack" destination="jBG-U4-4HI" id="dbd-ye-P6r"/>
+                        <outlet property="forgetPassword" destination="1uQ-C4-1eX" id="m9p-4N-kam"/>
                         <outlet property="mystackview" destination="WiH-f4-J66" id="fr7-e9-IoU"/>
+                        <outlet property="passwordLable" destination="17l-LI-mGC" id="3cb-BF-kaq"/>
+                        <outlet property="passwordStack" destination="5vs-6z-cKE" id="G90-gq-aNA"/>
+                        <outlet property="passwordTF" destination="C1q-EB-D8O" id="2u4-Uf-INI"/>
+                        <outlet property="phoneLable" destination="5J0-2W-qSt" id="xIk-Ir-DIl"/>
                         <outlet property="phoneTF" destination="CEL-Lp-zOg" id="nXZ-Qy-tGo"/>
+                        <outlet property="signUp" destination="hd2-Zb-3Fc" id="Tqc-i4-wiL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mqJ-h5-Kno" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.40000000000001" y="839.73013493253382"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="BOd-Ka-Wg9">
+            <objects>
+                <viewController id="or6-pq-cCI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="apf-1x-oJN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qv7-j1-1MB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="225"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="group-1" translatesAutoresizingMaskIntoConstraints="NO" id="4vg-Vx-7Je">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="225"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qv7-j1-1MB" secondAttribute="trailing" id="D8t-g4-EE9"/>
+                            <constraint firstItem="qv7-j1-1MB" firstAttribute="top" secondItem="apf-1x-oJN" secondAttribute="top" id="SKL-KP-jYp"/>
+                            <constraint firstItem="qv7-j1-1MB" firstAttribute="leading" secondItem="apf-1x-oJN" secondAttribute="leading" id="ecs-bI-PSb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aS0-6q-Mes"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="onS-Ve-3sJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971.25" y="858.80281690140851"/>
+        </scene>
         <!--Page2 View Controller-->
         <scene sceneID="oAs-D4-UXz">
             <objects>
                 <viewController id="KNM-z0-Upk" customClass="Page2ViewController" customModule="water_well" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K6s-56-1iC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZhR-s6-W3v" userLabel="waveStack">
-                                <rect key="frame" x="0.0" y="589" width="375" height="78"/>
+                                <rect key="frame" x="0.0" y="490" width="320" height="78"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="vQT-ho-JQt">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ohi-d0-BDf" userLabel="titleStack">
-                                <rect key="frame" x="91" y="248" width="193" height="171"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Wa-9Z-asb">
+                                <rect key="frame" x="63.5" y="212.5" width="193" height="143.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="water_resource" translatesAutoresizingMaskIntoConstraints="NO" id="TSd-ZO-qAJ">
-                                        <rect key="frame" x="13" y="0.0" width="167" height="37"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="water_resource" translatesAutoresizingMaskIntoConstraints="NO" id="KXg-wO-gDa">
+                                        <rect key="frame" x="0.0" y="0.0" width="193" height="37"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="group_28" translatesAutoresizingMaskIntoConstraints="NO" id="Tuj-UV-8PU">
-                                        <rect key="frame" x="0.0" y="38" width="193" height="82"/>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="S1x-hi-Xrf" userLabel="progressStack">
-                                        <rect key="frame" x="0.0" y="121" width="193" height="50"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="J34-xi-XME">
+                                        <rect key="frame" x="0.0" y="38" width="193" height="105.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="group_28" translatesAutoresizingMaskIntoConstraints="NO" id="NHW-h4-5kH">
+                                                <rect key="frame" x="0.0" y="0.0" width="193" height="82"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wrr-Xi-akz">
+                                                <rect key="frame" x="6.5" y="91" width="180" height="14.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="180" id="hJi-0I-opG"/>
+                                                    <constraint firstAttribute="height" constant="14.5" id="kXT-cD-2sX"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
@@ -178,20 +327,21 @@
                         <constraints>
                             <constraint firstItem="ZhR-s6-W3v" firstAttribute="leading" secondItem="jds-3K-DMI" secondAttribute="leading" id="0K7-VH-gqB"/>
                             <constraint firstItem="jds-3K-DMI" firstAttribute="trailing" secondItem="ZhR-s6-W3v" secondAttribute="trailing" id="BjL-ku-Hqf"/>
-                            <constraint firstItem="Ohi-d0-BDf" firstAttribute="centerX" secondItem="K6s-56-1iC" secondAttribute="centerX" id="M98-aB-RDF"/>
                             <constraint firstItem="ZhR-s6-W3v" firstAttribute="bottom" secondItem="jds-3K-DMI" secondAttribute="bottom" id="o8R-Qr-Ito"/>
-                            <constraint firstItem="Ohi-d0-BDf" firstAttribute="centerY" secondItem="K6s-56-1iC" secondAttribute="centerY" id="uiL-wm-5oC"/>
+                            <constraint firstItem="8Wa-9Z-asb" firstAttribute="centerY" secondItem="K6s-56-1iC" secondAttribute="centerY" id="q7s-fL-XCN"/>
+                            <constraint firstItem="8Wa-9Z-asb" firstAttribute="centerX" secondItem="K6s-56-1iC" secondAttribute="centerX" id="tR5-nK-AJC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jds-3K-DMI"/>
                     </view>
-                    <navigationItem key="navigationItem" id="X9i-Od-agD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xod-yx-nLo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956" y="138.0809595202399"/>
+            <point key="canvasLocation" x="902" y="137"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bitmap" width="144" height="20"/>
+        <image name="bitmap-1" width="178" height="20"/>
         <image name="group" width="360" height="78"/>
         <image name="group-1" width="360" height="225"/>
         <image name="group_28" width="193" height="82"/>
