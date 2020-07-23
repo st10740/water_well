@@ -15,7 +15,11 @@
 		1E39FAB724BC08DB005B95EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E39FAB524BC08DB005B95EC /* LaunchScreen.storyboard */; };
 		1E39FAC224BC08DB005B95EC /* water_wellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E39FAC124BC08DB005B95EC /* water_wellTests.swift */; };
 		1E39FACD24BC08DB005B95EC /* water_wellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E39FACC24BC08DB005B95EC /* water_wellUITests.swift */; };
+		1E45904424C19D3500F27CDA /* Page4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E45904324C19D3500F27CDA /* Page4ViewController.swift */; };
+		1E4757ED24C6E2BF0065B383 /* Page6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4757EC24C6E2BF0065B383 /* Page6ViewController.swift */; };
 		1E4C9DEB24BD403F00C73AB9 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C9DEA24BD403F00C73AB9 /* Page2ViewController.swift */; };
+		1E4D7A4924C7D56D005CEBB3 /* RobotoTTF in Resources */ = {isa = PBXBuildFile; fileRef = 1E4D7A4824C7D56D005CEBB3 /* RobotoTTF */; };
+		1E5C78D024C57D4E00EFCB88 /* Page5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5C78CF24C57D4E00EFCB88 /* Page5ViewController.swift */; };
 		1E789E4624BD812000E081AE /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E789E4524BD812000E081AE /* Page3ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E2276A824BC4D5A00B05EAA /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../Downloads/roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		1E39FAA724BC08DB005B95EC /* water_well.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = water_well.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E39FAAA24BC08DB005B95EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E39FAAC24BC08DB005B95EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,8 +55,11 @@
 		1E39FAC824BC08DB005B95EC /* water_wellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = water_wellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E39FACC24BC08DB005B95EC /* water_wellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = water_wellUITests.swift; sourceTree = "<group>"; };
 		1E39FACE24BC08DB005B95EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E499CB524BFEC920046BF75 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../../Downloads/Roboto-2/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		1E45904324C19D3500F27CDA /* Page4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4ViewController.swift; sourceTree = "<group>"; };
+		1E4757EC24C6E2BF0065B383 /* Page6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page6ViewController.swift; sourceTree = "<group>"; };
 		1E4C9DEA24BD403F00C73AB9 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
+		1E4D7A4824C7D56D005CEBB3 /* RobotoTTF */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RobotoTTF; path = ../../../Downloads/RobotoTTF; sourceTree = "<group>"; };
+		1E5C78CF24C57D4E00EFCB88 /* Page5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page5ViewController.swift; sourceTree = "<group>"; };
 		1E789E4524BD812000E081AE /* Page3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,8 +111,7 @@
 		1E39FAA924BC08DB005B95EC /* water_well */ = {
 			isa = PBXGroup;
 			children = (
-				1E2276A824BC4D5A00B05EAA /* Roboto-Regular.ttf */,
-				1E499CB524BFEC920046BF75 /* Roboto-Bold.ttf */,
+				1E4D7A4824C7D56D005CEBB3 /* RobotoTTF */,
 				1E39FAAA24BC08DB005B95EC /* AppDelegate.swift */,
 				1E39FAAC24BC08DB005B95EC /* SceneDelegate.swift */,
 				1E39FAAE24BC08DB005B95EC /* ViewController.swift */,
@@ -116,6 +121,9 @@
 				1E39FAB824BC08DB005B95EC /* Info.plist */,
 				1E4C9DEA24BD403F00C73AB9 /* Page2ViewController.swift */,
 				1E789E4524BD812000E081AE /* Page3ViewController.swift */,
+				1E45904324C19D3500F27CDA /* Page4ViewController.swift */,
+				1E5C78CF24C57D4E00EFCB88 /* Page5ViewController.swift */,
+				1E4757EC24C6E2BF0065B383 /* Page6ViewController.swift */,
 			);
 			path = water_well;
 			sourceTree = "<group>";
@@ -242,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E4D7A4924C7D56D005CEBB3 /* RobotoTTF in Resources */,
 				1E39FAB724BC08DB005B95EC /* LaunchScreen.storyboard in Resources */,
 				1E39FAB424BC08DB005B95EC /* Assets.xcassets in Resources */,
 				1E39FAB224BC08DB005B95EC /* Main.storyboard in Resources */,
@@ -270,9 +279,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E39FAAF24BC08DB005B95EC /* ViewController.swift in Sources */,
+				1E5C78D024C57D4E00EFCB88 /* Page5ViewController.swift in Sources */,
 				1E39FAAB24BC08DB005B95EC /* AppDelegate.swift in Sources */,
+				1E45904424C19D3500F27CDA /* Page4ViewController.swift in Sources */,
 				1E4C9DEB24BD403F00C73AB9 /* Page2ViewController.swift in Sources */,
 				1E789E4624BD812000E081AE /* Page3ViewController.swift in Sources */,
+				1E4757ED24C6E2BF0065B383 /* Page6ViewController.swift in Sources */,
 				1E39FAAD24BC08DB005B95EC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
