@@ -19,6 +19,7 @@
 		1E4757ED24C6E2BF0065B383 /* Page6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4757EC24C6E2BF0065B383 /* Page6ViewController.swift */; };
 		1E4C9DEB24BD403F00C73AB9 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C9DEA24BD403F00C73AB9 /* Page2ViewController.swift */; };
 		1E4D7A4924C7D56D005CEBB3 /* RobotoTTF in Resources */ = {isa = PBXBuildFile; fileRef = 1E4D7A4824C7D56D005CEBB3 /* RobotoTTF */; };
+		1E58363424C934ED009E0CB8 /* Page7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E58363324C934ED009E0CB8 /* Page7ViewController.swift */; };
 		1E5C78D024C57D4E00EFCB88 /* Page5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5C78CF24C57D4E00EFCB88 /* Page5ViewController.swift */; };
 		1E789E4624BD812000E081AE /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E789E4524BD812000E081AE /* Page3ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		1E4757EC24C6E2BF0065B383 /* Page6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page6ViewController.swift; sourceTree = "<group>"; };
 		1E4C9DEA24BD403F00C73AB9 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		1E4D7A4824C7D56D005CEBB3 /* RobotoTTF */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RobotoTTF; path = ../../../Downloads/RobotoTTF; sourceTree = "<group>"; };
+		1E58363324C934ED009E0CB8 /* Page7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page7ViewController.swift; sourceTree = "<group>"; };
 		1E5C78CF24C57D4E00EFCB88 /* Page5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page5ViewController.swift; sourceTree = "<group>"; };
 		1E789E4524BD812000E081AE /* Page3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 				1E45904324C19D3500F27CDA /* Page4ViewController.swift */,
 				1E5C78CF24C57D4E00EFCB88 /* Page5ViewController.swift */,
 				1E4757EC24C6E2BF0065B383 /* Page6ViewController.swift */,
+				1E58363324C934ED009E0CB8 /* Page7ViewController.swift */,
 			);
 			path = water_well;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E58363424C934ED009E0CB8 /* Page7ViewController.swift in Sources */,
 				1E39FAAF24BC08DB005B95EC /* ViewController.swift in Sources */,
 				1E5C78D024C57D4E00EFCB88 /* Page5ViewController.swift in Sources */,
 				1E39FAAB24BC08DB005B95EC /* AppDelegate.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Page6ViewController: UIViewController {
+class Page6ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var TF1: UITextField!
     @IBOutlet weak var TF2: UITextField!
@@ -31,6 +31,14 @@ class Page6ViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        TF1.delegate = self
+        TF2.delegate = self
+        TF3.delegate = self
+        TF4.delegate = self
+        TF5.delegate = self
+        TF6.delegate = self
+        
         TF1.textColor = UIColor.init(displayP3Red: 33/255, green: 75/255, blue: 228/255, alpha: 1)
         TF2.textColor = UIColor.init(displayP3Red: 33/255, green: 75/255, blue: 228/255, alpha: 1)
         TF3.textColor = UIColor.init(displayP3Red: 33/255, green: 75/255, blue: 228/255, alpha: 1)
@@ -61,6 +69,21 @@ class Page6ViewController: UIViewController {
         TF3.addTarget(self, action: #selector(textfieldDidChange(textfield:)), for: .editingChanged)
         TF4.addTarget(self, action: #selector(textfieldDidChange(textfield:)), for: .editingChanged)
         TF5.addTarget(self, action: #selector(textfieldDidChange(textfield:)), for: .editingChanged)
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        let currentText = textField.text ?? ""
+        guard let stringRange = Range(range, in: currentText) else { return false }
+        let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
+        return updatedText.count <= 1
+        
     }
     
     
@@ -93,6 +116,8 @@ class Page6ViewController: UIViewController {
             
         }
     }
+
+    
     
     @IBAction func goBack(_ sender: Any) {
         dismiss(animated: false, completion: nil)

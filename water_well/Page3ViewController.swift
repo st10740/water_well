@@ -29,9 +29,9 @@ class Page3ViewController: UIViewController {
     @IBOutlet weak var titleStack: UIStackView!
     @IBOutlet weak var topPlace: UIStackView!
     
-    @IBOutlet weak var navigation: UINavigationItem!
     
-    
+    let phoneerror = UILabel()
+    let passworderror = UILabel()
     
     
     override func viewDidLoad() {
@@ -65,10 +65,56 @@ class Page3ViewController: UIViewController {
         barAppearance.configureWithTransparentBackground()
         navigationController?.navigationBar.standardAppearance = barAppearance
         
+        
+
+        
+        
+        
+        
+
+        //產生手機輸入錯誤文字訊息
+        phoneerror.text = "您輸入的手機號碼不存在"
+        phoneerror.textColor = UIColor.init(displayP3Red: 236/255, green: 62/255, blue: 74/255, alpha: 1)
+        phoneerror.alpha = 0
+        
+        phoneerror.font = UIFont.systemFont(ofSize: 12)
+        
+        view.addSubview(phoneerror)
+        
+        //設autolayout
+        phoneerror.translatesAutoresizingMaskIntoConstraints = false
+        
+        let phoneConstraints = [
+            phoneerror.leadingAnchor.constraint(equalTo: mystackview.leadingAnchor),
+            phoneerror.topAnchor.constraint(equalTo: mystackview.bottomAnchor, constant: 4)]
+        
+        NSLayoutConstraint.activate(phoneConstraints)
+        
+        
+        //產生密碼輸入錯誤文字訊息
+        passworderror.text = "您輸入的密碼錯誤"
+        passworderror.textColor = UIColor.init(displayP3Red: 236/255, green: 62/255, blue: 74/255, alpha: 1)
+        passworderror.alpha = 0
+        
+        passworderror.font = UIFont.systemFont(ofSize: 12)
+        
+        view.addSubview(passworderror)
+        
+        //設autolyout
+        passworderror.translatesAutoresizingMaskIntoConstraints = false
+        
+        let passwordConstraints = [
+            passworderror.leadingAnchor.constraint(equalTo: passwordStack.leadingAnchor),
+            passworderror.topAnchor.constraint(equalTo: passwordStack.bottomAnchor, constant: 4)]
+        
+        NSLayoutConstraint.activate(passwordConstraints)
+        
+        
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         
         if false {  //手機號碼錯誤
             phoneErrorAppear()
@@ -90,49 +136,31 @@ class Page3ViewController: UIViewController {
     
     
     
+    
+    //MARK: decide error whether appear
     func phoneErrorAppear(){
         //變紅框
         mystackview.addBroader(color: .white, bordercolor: UIColor.init(displayP3Red: 236/255, green: 62/255, blue: 74/255, alpha: 1) , TF: phoneTF)
+        //顯示錯誤文字
+        phoneerror.alpha = 1
         
-        //產生文字訊息
-        let phoneerror = UILabel()
-        phoneerror.text = "您輸入的手機號碼不存在"
-        phoneerror.textColor = UIColor.init(displayP3Red: 236/255, green: 62/255, blue: 74/255, alpha: 1)
         
-        phoneerror.font = UIFont.systemFont(ofSize: 12)
-        
-        view.addSubview(phoneerror)
-        
-        //設autolayout
-        phoneerror.translatesAutoresizingMaskIntoConstraints = false
-        
-        let constraints = [
-            phoneerror.leadingAnchor.constraint(equalTo: mystackview.leadingAnchor),
-            phoneerror.topAnchor.constraint(equalTo: mystackview.bottomAnchor, constant: 4)]
-        
-        NSLayoutConstraint.activate(constraints)
     }
     
     func passwordErrorAppear(){
         //變紅框
         passwordStack.addBroader(color: .white, bordercolor: UIColor.init(displayP3Red: 236/255, green: 62/255, blue: 74/255, alpha: 1) , TF: passwordTF)
+        //顯示錯誤文字
+        passworderror.alpha = 1
         
-        //產生文字訊息
-        let passworderror = UILabel()
-        passworderror.text = "您輸入的密碼錯誤"
-        passworderror.textColor = UIColor.init(displayP3Red: 236/255, green: 62/255, blue: 74/255, alpha: 1)
-        passworderror.font = UIFont.systemFont(ofSize: 12)
         
-        view.addSubview(passworderror)
+    }
+    
+    func phoneErrorDisappear(){
         
-        //設autolyout
-        passworderror.translatesAutoresizingMaskIntoConstraints = false
-        
-        let constraints = [
-            passworderror.leadingAnchor.constraint(equalTo: passwordStack.leadingAnchor),
-            passworderror.topAnchor.constraint(equalTo: passwordStack.bottomAnchor, constant: 4)]
-        
-        NSLayoutConstraint.activate(constraints)
+    }
+    
+    func passwordErrorDisappear(){
         
     }
     
@@ -143,6 +171,7 @@ class Page3ViewController: UIViewController {
     @IBAction func goForgetPassword(_ sender: Any) {
         performSegue(withIdentifier: "gotoForgetPassword", sender: self)
     }
+    
     
     
     

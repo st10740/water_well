@@ -139,6 +139,7 @@ class Page5ViewController: UIViewController, UIPageViewControllerDelegate, UIPag
         
     }
     
+    
 
     
     @objc func segmentedChange(sender: UISegmentedControl){
@@ -177,9 +178,12 @@ class Page5ViewController: UIViewController, UIPageViewControllerDelegate, UIPag
         selectedIndex = viewController.view.tag
         segmentedControl.selectedSegmentIndex = selectedIndex
         let pageIndex = viewController.view.tag - 1
+        print("before")
+        segmentedControl.changeUnderlinePosition()
         if pageIndex < 0 {
             return nil
         }
+        
         return viewControllerArr[pageIndex]
     }
     
@@ -188,9 +192,12 @@ class Page5ViewController: UIViewController, UIPageViewControllerDelegate, UIPag
         selectedIndex = viewController.view.tag
         segmentedControl.selectedSegmentIndex = selectedIndex
         let pageIndex = viewController.view.tag + 1
+        print("after")
+        segmentedControl.changeUnderlinePosition()
         if pageIndex > 1 {
             return nil
         }
+        
         return viewControllerArr[pageIndex]
     }
     
@@ -227,7 +234,7 @@ extension UISegmentedControl{
         let underlineWidth: CGFloat = self.bounds.size.width / CGFloat(self.numberOfSegments)
         let underlineHeight: CGFloat = 2.0
         let underlineXPosition = CGFloat(selectedSegmentIndex * Int(underlineWidth))
-        let underLineYPosition = self.bounds.size.height - 1.0
+        let underLineYPosition = self.bounds.size.height - 2.0
         let underlineFrame = CGRect(x: underlineXPosition, y: underLineYPosition, width: underlineWidth, height: underlineHeight)
         let underline = UIView(frame: underlineFrame)
         underline.backgroundColor = UIColor(red: 33/255, green: 75/255, blue: 228/255, alpha: 1.0)
