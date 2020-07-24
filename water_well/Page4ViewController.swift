@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Page4ViewController: UIViewController {
+class Page4ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var nameTFStack: UIStackView!
@@ -32,6 +32,11 @@ class Page4ViewController: UIViewController {
     
     @IBOutlet weak var loginStack: UIStackView!
     
+    @IBOutlet weak var RegisterScroll: UIScrollView!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,6 +51,8 @@ class Page4ViewController: UIViewController {
         let blueColor = UIColor.init(displayP3Red: 33/255, green: 75/255, blue: 228/255, alpha: 1)
         loginStack.makeRectangle(color: blueColor)
 
+        passwordTF.delegate = self
+        ensureTF.delegate = self
         
     }
     
@@ -77,6 +84,37 @@ class Page4ViewController: UIViewController {
         textfield.layer.borderWidth = 2
         label.textColor = UIColor.init(displayP3Red: 119/255, green: 119/255, blue: 119/255, alpha: 1)
     }
+    
+    
+   
+    
+    //MARK: textfield delegate
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        switch textField {
+        case passwordTF:
+             RegisterScroll.setContentOffset(CGPoint(x: 0, y: 100), animated: true)
+            
+        case ensureTF:
+             RegisterScroll.setContentOffset(CGPoint(x: 0, y: 150), animated: true)
+        default:
+             break
+        }
+       
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        ensureTF.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        RegisterScroll.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+    }
+    
+    
+    
+    
+    
     
     @objc func textfieldDidChange(sender: UITextField){
         switch sender {
